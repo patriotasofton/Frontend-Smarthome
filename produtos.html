@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seleção de Produtos Inteligentes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Escolha Seus Produtos Inteligentes</h1>
+  </header>
+  <button class="back-button" onclick="window.history.back()">← Voltar</button>
+    
+  <div class="product-container">
+    
+    <div class="product-card">
+      <img src="images/file (2).jpg" alt="Servidor de Energia">
+      <h2>Servidor de Energia</h2>
+      <p>Responsável por monitorar o consumo de energia da residência.</p>
+      <button class="select-button" data-product-name="Servidor de Energia">Selecionar</button>
+    </div>
+    <div class="product-card">
+      <img src="images/file (4).jpg" alt="Termostato Inteligente">
+      <h2>Termostato Inteligente</h2>
+      <p>Controle prático da temperatura.</p>
+      <button class="select-button" data-product-name="Termostato Inteligente">Selecionar</button>
+    </div>
+    <div class="product-card">
+      <img src="images/camera.png" alt="Câmera de Segurança">
+      <h2>Câmera de Segurança</h2>
+      <p>Monitore sua casa a qualquer hora.</p>
+      <button class="select-button" data-product-name="Câmera de Segurança" data-product-price="399.99">Selecionar</button>
+    </div>
+    <div class="product-card">
+      <img src="images/file (3).jpg" alt="Detector de Fumaça">
+      <h2>Detector de Fumaça</h2>
+      <p>Monitore sinais de fumaça em sua residência.</p>
+      <button class="select-button" data-product-name="Detector de Fumaça" data-product-price="89.99">Selecionar</button>
+    </div>
+    <div class="product-card">
+      <img src="images/fechadura.jpg" alt="Fechadura Inteligente">
+      <h2>Fechadura Inteligente</h2>
+      <p>Mais segurança com controle remoto.</p>
+      <button class="select-button" data-product-name="Fechadura Inteligente" data-product-price="499.99">Selecionar</button>
+    </div>
+    <div class="product-card">
+      <img src="images/file (1).jpg" alt="Medidor de Gás">
+      <h2>Medidor de Gás</h2>
+      <p>Monitore o consumo de gás.</p>
+      <button class="select-button" data-product-name="Medidor de Gás" data-product-price="149.99">Selecionar</button>
+    </div>
+  </div>
+
+  <!-- Carrinho de Compras -->
+  <div class="cart">
+    <h2>Carrinho de Compras</h2>
+    <ul id="cart-items"></ul>
+    <button id="confirm-button">Confirmar Compra</button>
+  </div>
+
+  <script src="JS/script.js"></script> <!-- Incluindo o arquivo JavaScript -->
+</body>
+</html>

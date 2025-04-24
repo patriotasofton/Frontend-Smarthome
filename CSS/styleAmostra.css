@@ -1,0 +1,166 @@
+/* Configurações gerais */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1e1e2d;
+  color: white;
+  font-family: 'lucida sans';
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+/* Conteúdo Principal */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Carrinho */
+.cart {
+  background-color: #283046;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color:  #f2a365;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #2e3b4e;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Switch estilo */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #e85d75;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Botões */
+.extra-button {
+  background-color: #e85d75; /* Cor principal */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.extra-button:hover {
+  background-color: #f2a365; /* Cor de hover */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .cart {
+    padding: 15px;
+  }
+}
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #e85d75;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #e85d75;
+}
+
